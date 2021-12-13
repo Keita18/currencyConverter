@@ -23,3 +23,17 @@ class Currency_convertor:
         # limiting the precision to 2 decimal places
         amount = round(amount * self.rates[to_currency], 2)
         print('{} {} = {} {}'.format(initial_amount, from_currency, amount, to_currency))
+
+# Driver code
+if __name__ == "__main__":
+
+    YOUR_ACCESS_KEY = 'd6b399c7897e6895310c3ee916fc6635'
+    url = str.__add__('http://data.fixer.io/api/latest?access_key=', YOUR_ACCESS_KEY)
+    c = Currency_convertor(url)
+
+    while True:
+        from_country = input("From Country: ")
+        to_country = input("TO Country: ")
+        amount = int(input("Amount: "))
+
+        c.convert(from_country, to_country, amount)
