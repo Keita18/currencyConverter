@@ -35,9 +35,14 @@ if __name__ == "__main__":
     url = str.__add__('http://data.fixer.io/api/latest?access_key=', YOUR_ACCESS_KEY)
     c = Currency_convertor(url)
 
-    while True:
+    flag = True
+
+    while flag:
         print('==================================')
         from_country = input("From Country: ")
+        if from_country == '-exit':
+            flag = False
+            continue
         to_country = input("TO Country: ")
         amount = int(input("Amount: "))
 
