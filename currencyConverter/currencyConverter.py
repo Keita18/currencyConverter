@@ -17,9 +17,6 @@ class Currency_convertor:
 
         # function to do a simple cross multiplication between
 
-    def rates_test(self):
-        return self.rates
-
     # the amount and the conversion rates
     def convert(self, from_currency, to_currency, amount):
         initial_amount = amount
@@ -29,7 +26,6 @@ class Currency_convertor:
         # limiting the precision to 2 decimal places
         amount = round(amount * self.rates[to_currency], 2)
         print('{} {} = {} {}'.format(initial_amount, from_currency, amount, to_currency))
-        return amount
 
 
 # Driver code
