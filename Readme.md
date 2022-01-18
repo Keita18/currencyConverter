@@ -19,3 +19,5 @@ https://fixer.io/
 2) Run command: 
    - docker build -t currency-converter .
    - docker run -it temperature-converter
+
+## trying CI/Cd
