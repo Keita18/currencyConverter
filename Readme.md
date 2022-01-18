@@ -19,3 +19,11 @@ https://fixer.io/
 2) Run command: 
    - docker build -t currency-converter .
    - docker run -it temperature-converter
+
+
+## Testing
+* main 
+* [![CI](https://github.com/Keita18/currencyConverter/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/Keita18/currencyConverter/actions/workflows/python-app.yml)
+
+* dev 
+[![CI](https://github.com/Keita18/currencyConverter/actions/workflows/python-app.yml/badge.svg?branch=dev)](https://github.com/Keita18/currencyConverter/actions/workflows/python-app.yml)
