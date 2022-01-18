@@ -29,8 +29,14 @@ def test_convert():
     try:
         euro_to_rub = c.convert("EUR", "RUB", 100)
         rub_to_euro = c.convert("RUB", "EUR", euro_to_rub)
+        can_to_rub = c.convert("CAD", "RUB", 100)
+        rub2_to_euro = c.convert("RUB", "CAD", euro_to_rub)
+
     except:
         pytest.fail("shouldn't happen")
 
     assert euro_to_rub > 0
     assert rub_to_euro == 100
+
+    assert can_to_rub > 0
+    assert rub2_to_euro > 0
